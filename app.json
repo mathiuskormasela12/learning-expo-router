@@ -3,6 +3,7 @@
     "name": "learning-expo-router",
     "slug": "learning-expo-router",
     "version": "1.0.0",
+    "scheme": "learning-expo-router",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,7 +25,20 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "becfb27b-3efe-4976-8b0e-036d6ac89bde"
+      }
     }
   }
 }
